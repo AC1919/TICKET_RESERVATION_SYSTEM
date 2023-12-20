@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="train.html">TRAIN</a></li>
+            <li><a href="MEAL">MEAL</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <div id="plan3">
+        <form action="">
+        <div id="plan4">
+            
+            <div id="plan1">
+                <label for="departure" style="color: black;font-size: 28px; font-weight: bold; background-color: rgb(84, 129, 17);">Departure:</label>
+                <input type="date" id="departure" name="departure" style="font-size: 28px;">
+            </div>
+            <div id="plan2">
+                <label for="return" style="color: black;font-size: 28px; font-weight: bold; background-color: rgb(84, 129, 17);">Return:</label>
+                <input type="date" id="return" name="return" style="font-size: 28px;">
+            </div>
+            <div id="plan5">
+                <select style="background-color: aqua;font-size: 28px;">
+                    <option value="0">From:</option>
+                    <option value="1">Kolkata</option>
+                    <option value="2">Chennai</option>
+                    <option value="3">Rajasthan</option>
+                    <option value="4">Delhi</option>
+                    <option value="5">Amritsar</option>
+                    <option value="6">Mumbai</option>
+                    <option value="7">Pune</option>
+                    <option value="8">Howrah</option>
+                    <option value="9">Bhopal</option>
+                    <option value="10">Indore</option>
+                    <option value="11">Bangalore</option>
+                    <option value="12">Lucknow</option>
+                  </select>
+            </div>
+            <div id="plan5">
+                <select style="background-color: aqua;font-size: 28px;">
+                    <option value="0">To:</option>
+                    <option value="1">Kolkata</option>
+                    <option value="2">Chennai</option>
+                    <option value="3">Rajasthan</option>
+                    <option value="4">Delhi</option>
+                    <option value="5">Amritsar</option>
+                    <option value="6">Mumbai</option>
+                    <option value="7">Pune</option>
+                    <option value="8">Howrah</option>
+                    <option value="9">Bhopal</option>
+                    <option value="10">Indore</option>
+                    <option value="11">Bangalore</option>
+                    <option value="12">Lucknow</option>
+                  </select>
+            </div>
+
+        </div>
+        </form>
+        <div>
+            <h2>Please select your train:</h2>
+            <table id="customers">
+                <tr>
+                  <th>Train No</th>
+                  <th>Name</th>
+                  <th>From</th>
+                  <th>To</th>
+                  <th>Duration</th>
+                  <th>Time</th>
+                  <th>Price</th>
+                  <th>Qty of Tickets</th>
+                  <th>Pay</th>
+                </tr>
+                <tr>
+                  <td>100</td>
+                  <td>Chennai Mail</td>
+                  <td>Howrah</td>
+                  <td>Chennai</td>
+                  <td>27 hrs</td>
+                  <td>11:55 PM</td>
+                  <td>2000</td>
+                  <td><input type="number" id="n1" value=0></td>
+                  <td><input type="button" value="Pay" onclick="tprice1()"></td>
+                </tr>
+                <tr>
+                  <td>101</td>
+                  <td>Rajdhani Express</td>
+                  <td>Delhi</td>
+                  <td>Mumbai</td>
+                  <td>15 hrs</td>
+                  <td>17:00 PM</td>
+                  <td>2040</td>
+                  <td><input type="number" id="n2" value=0></td>
+                  <td><input type="button" value="Pay" onclick="tprice2()"></td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Duronto Express</td>
+                    <td>Kolkata</td>
+                    <td>Mumbai</td>
+                    <td>27 hrs</td>
+                    <td>11:00 AM</td>
+                    <td>3000</td>
+                    <td><input type="number" id="n3" value=0></td>
+                    <td><input type="button" value="Pay" onclick="tprice3()"></td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Vande Bharat</td>
+                    <td>Amritsar</td>
+                    <td>Lucknow</td>
+                    <td>13 hrs</td>
+                    <td>10:00 PM</td>
+                    <td>1080</td>
+                    <td><input type="number" id="n4" value=0></td>
+                    <td><input type="button" value="Pay" onclick="tprice4()"></td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Humsafar Express</td>
+                    <td>Rajasthan</td>
+                    <td>Bhopal</td>
+                    <td>23 hrs</td>
+                    <td>14:00 PM</td>
+                    <td>2000</td>
+                    <td><input type="number" id="n5" value=0></td>
+                    <td><input type="button" value="Pay" onclick="tprice5()"></td>
+                </tr>
+                <tr>
+                    <td>106</td>
+                    <td>Shatabdi Express</td>
+                    <td>Delhi</td>
+                    <td>Bhopal</td>
+                    <td>8 hrs 40 minutes</td>
+                    <td>18:00 PM</td>
+                    <td>1500</td>
+                    <td><input type="number" id="n6" value=0></td>
+                    <td><input type="button" value="Pay" onclick="tprice6()"></td>
+                </tr>
+                <tr>
+                    <td>107</td>
+                    <td>Bombay Mail</td>
+                    <td>Mumbai</td>
+                    <td>Chennai</td>
+                    <td>35 hrs</td>
+                    <td>21:00 PM</td>
+                    <td>5000</td>
+                    <td><input type="number" id="n7" value=0></td>
+                    <td><input type="button" value="Pay" onclick="tprice7()"></td>
+                </tr>
+
+               
+              </table>
+        </div>       
+    </div>
+</body>
+<script>
+    function tprice1(){
+        var a=document.getElementById("n1").value*2000;
+        alert(a);
+    }
+    function tprice2(){
+        var a=document.getElementById("n2").value*2040;
+        alert(a);
+    }
+    function tprice3(){
+        var a=document.getElementById("n3").value*2040;
+        alert(a);
+    }
+    function tprice4(){
+        var a=document.getElementById("n4").value*2040;
+        alert(a);
+    }
+    function tprice5(){
+        var a=document.getElementById("n5").value*2040;
+        alert(a);
+    }
+    function tprice6(){
+        var a=document.getElementById("n6").value*2040;
+        alert(a);
+    }
+    function tprice7(){
+        var a=document.getElementById("n7").value*2040;
+        alert(a);
+    }
+</script>
+</html>
